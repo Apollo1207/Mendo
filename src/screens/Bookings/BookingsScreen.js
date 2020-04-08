@@ -14,22 +14,22 @@ import MenuImage from '../../components/MenuImage/MenuImage';
 import DrawerActions from 'react-navigation';
 import { getCategoryName } from '../../data/MockDataAPI';
 
-export default class CategoriesScreen extends React.Component {
+export default class BookingsScreen extends React.Component {
   static navigationOptions = {
-    title: 'Categories'
+    title: 'Bookings'
   };
 
   constructor(props) {
     super(props);
   }
 
-  onPressRecipe = item => {
-    this.props.navigation.navigate('Recipe', { item });
+  onPressRestaurant = item => {
+    this.props.navigation.navigate('Restaurant', { item });
   };
 
 
-  renderCategory = ({ item }) => (
-    <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' onPress={() => this.onPressRecipe(item)}>
+  renderBookings = ({ item }) => (
+    <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' onPress={() => this.onPressRestaurant(item)}>
       <View style={styles.categoriesItemContainer}>
         <Image style={styles.categoriesPhoto} source={{ uri: item.photo_url }} />
         <Text style={styles.categoriesName}>{item.name}</Text>
@@ -43,7 +43,7 @@ export default class CategoriesScreen extends React.Component {
       <View>
         <FlatList
           data={categories}
-          renderItem={this.renderCategory}
+          renderItem={this.renderBookings}
           keyExtractor={item => `${item.id}`}
         />
       </View>

@@ -1,21 +1,21 @@
 import { createAppContainer } from 'react-navigation';
 import {createDrawerNavigator} from 'react-navigation-drawer'
 import {createStackNavigator} from 'react-navigation-stack'
-import HomeScreen from '../screens/Home/HomeScreen';
-import CategoriesScreen from '../screens/Categories/CategoriesScreen';
-import RecipeScreen from '../screens/Recipe/RecipeScreen';
+import RestaurantsScreen from '../screens/Restaurants/RestaurantsScreen';
+import BookingsScreen from '../screens/Bookings/BookingsScreen';
+import RestaurantScreen from '../screens/Restaurant/RestaurantScreen';
 import DrawerContainer from '../screens/DrawerContainer/DrawerContainer';
 
 
 
 const MainNavigator = createStackNavigator(
   {
-    Home: HomeScreen,
-    Categories: CategoriesScreen,
-    Recipe: RecipeScreen,
+    Restaurants: RestaurantsScreen,
+    Bookings: BookingsScreen,
+    Restaurant: RestaurantScreen,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Restaurants',
     defaulfNavigationOptions: ({ navigation }) => ({
       headerTitleStyle: {
         fontWeight: 'bold',

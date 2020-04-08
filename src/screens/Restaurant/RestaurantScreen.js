@@ -17,7 +17,7 @@ import ViewIngredientsButton from '../../components/ViewIngredientsButton/ViewIn
 
 const { width: viewportWidth } = Dimensions.get('window');
 
-export default class RecipeScreen extends React.Component {
+export default class RestaurantScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return {
       headerTransparent: 'true',
@@ -56,8 +56,8 @@ export default class RecipeScreen extends React.Component {
     const { activeSlide } = this.state;
     const { navigation } = this.props;
     const item = navigation.getParam('item');
-    const category = getCategoryById(item.categoryId);
-    const title = getCategoryName(category.id);
+    // const category = getCategoryById(item.categoryId);
+    // const title = getCategoryName(category.id);
 
     return (
       <ScrollView style={styles.container}>
@@ -67,7 +67,7 @@ export default class RecipeScreen extends React.Component {
               ref={c => {
                 this.slider1Ref = c;
               }}
-              data={item.photosArray}
+              // data={item.photosArray}
               renderItem={this.renderImage}
               sliderWidth={viewportWidth}
               itemWidth={viewportWidth}
@@ -81,7 +81,7 @@ export default class RecipeScreen extends React.Component {
               onSnapToItem={index => this.setState({ activeSlide: index })}
             />
             <Pagination
-              dotsLength={item.photosArray.length}
+              // dotsLength={item.photosArray.length}
               activeDotIndex={activeSlide}
               containerStyle={styles.paginationContainer}
               dotColor="rgba(255, 255, 255, 0.92)"

@@ -11,7 +11,7 @@ const RECIPE_ITEM_HEIGHT = 150;
 const RECIPE_ITEM_MARGIN = 20;
 
 // 2 photos per width
-export const RecipeCard = StyleSheet.create({
+export const RestaurantCard = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
