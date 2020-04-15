@@ -3,6 +3,7 @@ import {createDrawerNavigator} from 'react-navigation-drawer'
 import {createStackNavigator} from 'react-navigation-stack'
 import RestaurantsScreen from '../screens/Restaurants/RestaurantsScreen';
 import BookingsScreen from '../screens/Bookings/BookingsScreen';
+import ProfileScreen from '../screens/Profile/ProfileScreen';
 import RestaurantScreen from '../screens/Restaurant/RestaurantScreen';
 import DrawerContainer from '../screens/DrawerContainer/DrawerContainer';
 
@@ -13,6 +14,7 @@ const MainNavigator = createStackNavigator(
     Restaurants: RestaurantsScreen,
     Bookings: BookingsScreen,
     Restaurant: RestaurantScreen,
+    Profile: ProfileScreen,
   },
   {
     initialRouteName: 'Restaurants',
