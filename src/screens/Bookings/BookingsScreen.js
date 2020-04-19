@@ -1,14 +1,6 @@
 import React from 'react';
-import {
-  FlatList,
-  Text,
-  View,
-  Image,
-  TouchableHighlight
-} from 'react-native';
+import { FlatList, ScrollView, Text, View, TouchableHighlight, Image } from 'react-native';
 import styles from './styles';
-import { categories } from '../../data/dataArrays';
-import { getNumberOfRecipes } from '../../data/MockDataAPI';
 import { recipes } from '../../data/dataArrays';
 import MenuImage from '../../components/MenuImage/MenuImage';
 import DrawerActions from 'react-navigation';
@@ -19,6 +11,7 @@ export default class BookingsScreen extends React.Component {
     title: 'Bookings'
   };
 
+
   constructor(props) {
     super(props);
   }
@@ -27,13 +20,12 @@ export default class BookingsScreen extends React.Component {
     this.props.navigation.navigate('Restaurant', { item });
   };
 
-
-  renderBookings = ({ item }) => (
-    <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' onPress={() => this.onPressRestaurant(item)}>
-      <View style={styles.categoriesItemContainer}>
-        <Image style={styles.categoriesPhoto} source={{ uri: item.photo_url }} />
-        <Text style={styles.categoriesName}>{item.name}</Text>
-        <Text style={styles.categoriesInfo}>{getNumberOfRecipes(item.id)} recipes</Text>
+  renderRestaurants = ({ item }) => (
+    <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' /*onPress={() => this.onPressRestaurant(item)}*/>
+      <View style={styles.container}>
+        <Image style={styles.photo} source={{ uri: item.photo_url }} />
+        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.category}>{getCategoryName(item.categoryId)}</Text>
       </View>
     </TouchableHighlight>
   );
@@ -42,9 +34,12 @@ export default class BookingsScreen extends React.Component {
     return (
       <View>
         <FlatList
-          data={categories}
-          renderItem={this.renderBookings}
-          keyExtractor={item => `${item.id}`}
+          vertical
+          showsVerticalScrollIndicator={false}
+          numColumns={2}
+          data={recipes}
+          renderItem={this.renderRestaurants}
+          keyExtractor={item => `${item.restaurantId}`}
         />
       </View>
     );

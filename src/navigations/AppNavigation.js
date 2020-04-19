@@ -8,7 +8,6 @@ import RestaurantScreen from '../screens/Restaurant/RestaurantScreen';
 import DrawerContainer from '../screens/DrawerContainer/DrawerContainer';
 
 
-
 const MainNavigator = createStackNavigator(
   {
     Restaurants: RestaurantsScreen,
