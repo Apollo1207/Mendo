@@ -3,8 +3,12 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
 header:{
-    backgroundColor: "#00BFFF",
-    height:200,
+    backgroundColor: "#FFFFFF",
+    height:250,
+    marginTop:10,
+  },
+  container:{
+    backgroundColor:"#F2F2F2"
   },
   avatar: {
     width: 130,
@@ -15,47 +19,71 @@ header:{
     marginBottom:10,
     alignSelf:'center',
     position: 'absolute',
-    marginTop:130
+    marginTop:30
   },
   name:{
-    fontSize:22,
-    color:"#FFFFFF",
-    fontWeight:'600',
+    marginBottom:100,
+    alignSelf:'center',
+    position: 'absolute',
+    marginTop:175,
+    fontSize:28,
+    color:"#333333"
   },
   body:{
-    marginTop:40,
+    marginTop:15,
+    backgroundColor:"#FFFFFF",
   },
-  bodyContent: {
-    alignItems: 'center',
-    padding:30,
+  phone:{
+    fontSize:15,
+    color:"grey",
+    marginLeft:30,
+    marginTop:25,
   },
-  name:{
-    fontSize:28,
-    color: "#696969",
-    fontWeight: "600"
+  phoneinfo:{
+    fontSize:20,
+    marginLeft:30,
   },
-  info:{
-    fontSize:16,
-    color: "#00BFFF",
-    marginTop:10
+  email:{
+    fontSize:15,
+    color:"grey",
+    marginLeft:30,
+    marginTop:20
   },
-  description:{
-    fontSize:16,
-    color: "#696969",
-    marginTop:10,
-    textAlign: 'center'
+  emailinfo:{
+    fontSize:18,
+    marginLeft:30,
+  },
+  city:{
+    fontSize:15,
+    color:"grey",
+    marginLeft:30,
+    marginTop:20,
+  },
+  cityinfo:{
+    fontSize:18,
+    marginLeft:30,
+    marginBottom:28,
   },
   buttonContainer: {
-    marginTop:10,
-    height:45,
+    height:40,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom:20,
     width:250,
     borderRadius:30,
-    backgroundColor: "#00BFFF",
+    backgroundColor: "#3385ff",
+    color:"white"
+
   },
+  buttons:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop:110,
+    color:"white"
+
+  },
+
 });
 
 export default styles;
