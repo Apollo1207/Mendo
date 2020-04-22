@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
       marginTop:10,
       width: 250,
       borderRadius: 30,
-      backgroundColor: "#3385ff",
+      backgroundColor: "#5d9184",
       color: "white"
   },
   buttonContainerText: {

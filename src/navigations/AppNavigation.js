@@ -12,7 +12,12 @@ const MainNavigator = createStackNavigator(
   {
     Restaurants: RestaurantsScreen,
     Bookings: BookingsScreen,
-    Restaurant: RestaurantScreen,
+    Restaurant: {
+      screen: RestaurantScreen,
+      navigationOptions: {
+        header: null,
+      }
+    },
     Profile: ProfileScreen,
   },
   {
