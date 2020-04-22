@@ -5,10 +5,10 @@ import styles from './styles';
 import MenuButton from '../../components/MenuButton/MenuButton';
 
 export default class DrawerContainer extends React.Component {
-  render() {
-    const { navigation } = this.props;
-    return (
-      <View style={styles.content}>
+    render() {
+        const { navigation } = this.props;
+        return (
+            <View style={styles.content}>
         <View style={styles.container}>
           <MenuButton
             title="RESTAURANTS"
@@ -36,12 +36,12 @@ export default class DrawerContainer extends React.Component {
           />
         </View>
       </View>
-    );
-  }
+        );
+    }
 }
 
 DrawerContainer.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired
-  })
+    navigation: PropTypes.shape({
+        navigate: PropTypes.func.isRequired
+    })
 };

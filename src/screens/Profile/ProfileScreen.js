@@ -1,20 +1,20 @@
 import React from 'react';
 import {
-  Text,
-  View,
-  Image,
-TouchableOpacity
+    Text,
+    View,
+    Image,
+    TouchableOpacity
 } from 'react-native';
 import styles from './styles';
 
 export default class ProfileScreen extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+    constructor(props) {
+        super(props);
+    }
 
-  render() {
-    return (
-      <View style={styles.container}>
+    render() {
+        return (
+            <View style={styles.container}>
            <View style={styles.header}>
            <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
            <Text style={styles.name}>Dzyuba Yevhen</Text>
@@ -34,6 +34,6 @@ export default class ProfileScreen extends React.Component {
          </View>
        </View>
 
-    );
-  }
+        );
+    }
 }

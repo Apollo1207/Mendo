@@ -12,37 +12,56 @@ const RECIPE_ITEM_MARGIN = 20;
 
 // 2 photos per width
 export const RestaurantCard = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginLeft: RECIPE_ITEM_MARGIN,
-    marginTop: 20,
-    width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
-    height: RECIPE_ITEM_HEIGHT + 75,
-    borderColor: '#cccccc',
-    borderWidth: 0.5,
-    borderRadius: 15
-  },
-  photo: {
-    width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
-    height: RECIPE_ITEM_HEIGHT,
-    borderRadius: 15,
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0
-  },
-  title: {
-    flex: 1,
-    fontSize: 17,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#444444',
-    marginTop: 3,
-    marginRight: 5,
-    marginLeft: 5,
-  },
-  category: {
-    marginTop: 5,
-    marginBottom: 5
-  }
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: RECIPE_ITEM_MARGIN,
+        marginTop: 20,
+        width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
+        height: RECIPE_ITEM_HEIGHT + 75,
+        borderColor: '#cccccc',
+        borderWidth: 0.5,
+        borderRadius: 15,
+    },
+    photo: {
+        width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
+        height: RECIPE_ITEM_HEIGHT,
+        borderRadius: 15,
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0
+    },
+    title: {
+        flex: 1,
+        fontSize: 17,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#444444',
+        marginTop: 3,
+        marginRight: 5,
+        marginLeft: 5,
+    },
+    containerClock: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: 4,
+    },
+    category_top: {
+        fontSize: 14,
+    },
+    category_bottom: {},
+    slidersIconCalendar: {
+        marginRight: 3,
+    },
+    containerCalendar: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: 5,
+    },
+    slidersIconClock: {
+      marginRight:3
+    }
+
 });

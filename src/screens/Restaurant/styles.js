@@ -54,6 +54,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
+          backgroundColor: "#3385ff",
+
   },
   infoPhoto: {
     height: 20,
@@ -83,7 +85,26 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center'
-  }
+  },
+
+  slidersIconLocation: {
+
+  },
+  buttonContainer: {
+      height:45,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginTop:10,
+      width: 250,
+      borderRadius: 30,
+      backgroundColor: "#3385ff",
+      color: "white"
+  },
+  buttonContainerText: {
+    color:"white",
+    fontSize:16
+}
 });
 
 export default styles;
