@@ -27,11 +27,11 @@ export default class BookingsScreen extends React.Component {
         <Text style={styles.title}>{item.title}</Text>
                   <View style={styles.containerClock}>
                       <Icon name="clock" style={styles.slidersIconClock} size={13.5} color="black"/>
-                      <Text style={styles.category_top}>16:54</Text>
+                      <Text style={styles.category_top}>{item.time}</Text>
                     </View>
                 <View style={styles.containerCalendar}>
                   <Icon name="calendar-check" style={styles.slidersIconCalendar} size={15} color="black"/>
-                  <Text style={styles.category_bottom}>21.02.2020</Text>
+                  <Text style={styles.category_bottom}>{item.date}</Text>
                     </View>
                                 </View>
                                   </TouchableHighlight>

@@ -12,25 +12,11 @@ import {
 import styles from './styles';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { getIngredientName, getCategoryName, getCategoryById } from '../../data/MockDataAPI';
-import BackButton from '../../components/BackButton/BackButton';
-import ViewIngredientsButton from '../../components/ViewIngredientsButton/ViewIngredientsButton';
 import Icon from "react-native-vector-icons/FontAwesome5";
 
 const { width: viewportWidth } = Dimensions.get('window');
 
 export default class RestaurantScreen extends React.Component {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      headerTransparent: 'true',
-      headerLeft: (
-        <BackButton
-          onPress={() => {
-            navigation.goBack();
-          }}
-        />
-      )
-    };
-  };
 
   constructor(props) {
     super(props);

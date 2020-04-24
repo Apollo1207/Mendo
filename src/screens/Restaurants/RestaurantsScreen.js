@@ -10,8 +10,8 @@ import styles from './styles';
 import { categories } from '../../data/dataArrays';
 import { getNumberOfRecipes } from '../../data/MockDataAPI';
 import { recipes } from '../../data/dataArrays';
-import MenuImage from '../../components/MenuImage/MenuImage';
 import DrawerActions from 'react-navigation';
+import MenuImage from '../../components/MenuImage/MenuImage';
 import { getCategoryName } from '../../data/MockDataAPI';
 
 export default class RestaurantsScreen extends React.Component {

@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         marginTop: 25,
     },
     phoneinfo: {
-        fontSize: 20,
+        fontSize: 17.5,
         marginLeft: 30,
     },
     email: {
@@ -79,10 +79,11 @@ const styles = StyleSheet.create({
     buttons: {
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 110,
-        color: "white"
-
+        marginTop: 125,
     },
+    buttonText: {
+      color:"white"
+    }
 
 });
 
