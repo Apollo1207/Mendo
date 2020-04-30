@@ -43,9 +43,31 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  infoContainer: {
-    flex: 1,
+  majorInfoContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    },
+    majoreInfoContainer: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    },
+majorsInfoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginTop:2,
+    marginRight:10,
+  },
+  minorInfoContainer: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+  infoContainers: {
+    flex: 1,
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
@@ -54,8 +76,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-          backgroundColor: "#3385ff",
-
+    backgroundColor: "#3385ff",
   },
   infoPhoto: {
     height: 20,
@@ -65,7 +86,19 @@ const styles = StyleSheet.create({
   infoRecipe: {
     fontSize: 14,
     fontWeight: 'bold',
+    marginLeft: 8,
+  },
+  infoTemperature: {
+    fontSize: 13,
+    fontWeight: 'bold',
+    marginLeft: 8,
+    marginTop:2,
+  },
+  infoSchedule: {
+    fontSize: 14,
+    fontWeight: 'bold',
     marginLeft: 5,
+    marginTop:30,
   },
   category: {
     fontSize: 14,
@@ -76,8 +109,10 @@ const styles = StyleSheet.create({
   infoDescriptionRecipe: {
     textAlign: 'left',
     fontSize: 16,
-    marginTop: 30,
-    margin: 15
+    marginLeft:25,
+    marginRight:15,
+    marginTop:10,
+    marginBottom:15,
   },
   infoRecipeName: {
     fontSize: 28,
@@ -86,9 +121,12 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center'
   },
-
+  sliderIconLocation: {
+  paddingLeft:3,
+  },
   slidersIconLocation: {
-
+paddingTop:4,
+paddingLeft:1
   },
   buttonContainer: {
       height:45,
