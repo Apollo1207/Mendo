@@ -54,7 +54,7 @@ export default class RestaurantScreen extends React.Component {
               ref={c => {
                 this.slider1Ref = c;
               }}
-              // data={item.photosArray}
+              data={item.photosArray}
               renderItem={this.renderImage}
               sliderWidth={viewportWidth}
               itemWidth={viewportWidth}
@@ -68,7 +68,7 @@ export default class RestaurantScreen extends React.Component {
               onSnapToItem={index => this.setState({ activeSlide: index })}
             />
             <Pagination
-              // dotsLength={item.photosArray.length}
+              dotsLength={item.photosArray.length}
               activeDotIndex={activeSlide}
               containerStyle={styles.paginationContainer}
               dotColor="rgba(255, 255, 255, 0.92)"
@@ -82,7 +82,7 @@ export default class RestaurantScreen extends React.Component {
           </View>
         </View>
         <View style={styles.infoRecipeContainer}>
-          <Text style={styles.infoRecipeName}>Pizza Chelentano</Text>
+          <Text style={styles.infoRecipeName}>{item.name}</Text>
           <View style={styles.infoContainer}>
 
           </View>
@@ -90,12 +90,12 @@ export default class RestaurantScreen extends React.Component {
           <View style={styles.majoreInfoContainer}>
           <View style={styles.majorInfoContainer}>
             <Icon name="map-marker-alt" style={styles.sliderIconLocation} size={13.5} color="black"/>
-              <Text style={styles.infoRecipe}>Lviv, 21 Rynok Square</Text>
+              <Text style={styles.infoRecipe}>Lviv, {item.location}</Text>
           </View>
 
 
           <View style={styles.majorsInfoContainer}>
-            <Text style={styles.infoTemperature}>18</Text>
+            <Text style={styles.infoTemperature}>{item.temperature}</Text>
         <Icon name="temperature-high" style={styles.slidersIconLocation} size={11.5} color="black"/>
 
           </View>
@@ -105,8 +105,8 @@ export default class RestaurantScreen extends React.Component {
 
 
           <View style={styles.minorInfoContainer}>
-            <Text style={styles.infoSchedule}>Schedule: Mn. - Fr. 10:00 – 18:00</Text>
-            <Text style={styles.infoDescriptionRecipe}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</Text>
+            <Text style={styles.infoSchedule}>Schedule: {item.schdeule}</Text>
+            <Text style={styles.infoDescriptionRecipe}>{item.info}</Text>
           </View>
           <View style={styles.infoContainer}>
           <TouchableOpacity style={styles.buttonContainer}>

@@ -98,7 +98,7 @@ majorsInfoContainer: {
     fontSize: 14,
     fontWeight: 'bold',
     marginLeft: 5,
-    marginTop:30,
+    marginTop:20,
   },
   category: {
     fontSize: 14,
