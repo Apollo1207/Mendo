@@ -23,7 +23,7 @@ export const categories = [{
       'https://veronica.ua/wp-content/uploads/2018/02/black-cat-3.jpg',
       'https://veronica.ua/wp-content/uploads/2018/02/black-cat-1.jpg'
     ],
-    location: "Rynok Square, 32",
+    location: "street Heroes of the Maidan, 4",
     temperature:"18",
     schdeule:"Mon-Sun : 10:00 - 23:00",
     info:"The Black Cat Restaurant-Pub is a unique Ukrainian interpretation of an English pub. Combining modern elegance, a private atmosphere and a high level of service, it has signs of true perfection. Only in this restaurant with a constantly high level of cooking you can find such an elegant and expensive interior.Italian pizza for every taste and many other dishes are baked in a wood-burning oven. Wheat and corn homemade bread baked in this oven according to ancient recipes is a great addition to any meal.The pub-restaurant has a variety of beers, from light to dark. If you try chebureks and homemade sausages that are served with beer, you will never forget this taste.",
@@ -38,7 +38,7 @@ export const categories = [{
       'https://mayertrade.com.ua/img/cms/BLOGS/312-savytskyy_Art%20of%20Rest/savytskyy_Art%20of%20Rest_20.jpg',
       'https://mayertrade.com.ua/img/cms/BLOGS/312-savytskyy_Art%20of%20Rest/savytskyy_Art%20of%20Rest_12.jpg'
     ],
-    location: "street Dmitry Vitovsky, 43A",
+    location: "street Dmytro Vitovsky, 43A",
     temperature:"21",
     schdeule:"Mon-Sun : 12:00 - 02:00",
     info:"Imagine - a fabulous atmosphere, gentle light enveloping the hall, quiet music, stylish interiors and incredible holiday atmosphere, something unusual but warm ... It seems that for a while you 'fall out' of reality and get to where everything is filled with love ' Not only good mood but positive atmosphere and the incredible aroma of exquisite dishes and drinks are welcome in the air ... You want to stay here for as long as possible. The friendly staff takes care of everything that will make your evening unforgettable: decorate the table well, prepare delicious meals and bring them to the table in the best traditions of quality service. You are not just in the Park. Art of Rest you are in a world of sophistication, incredible celebration and elegance",
@@ -68,7 +68,7 @@ export const categories = [{
       'https://baczewskich.rest/wp-content/uploads/2019/01/green_garden2.jpg',
       'https://baczewski.virtual.ua/images/374625/baczewski.virtual.ua_034.jpg'
     ],
-    location: "street Shevska,8",
+    location: "street Shevska, 8",
     temperature:"8",
     schdeule:"Mon-Sun : 8:00 - 2:00",
     info:"The authentic interior of the early 20th century and the original presentation of new Galician cuisine in the heart of Lviv - such as in April 2015 was presented to its guests by the Bachevsky Restaurant. Bachevskys today are a greenhouse, three floors with different halls, a terrace and a veranda, lunches accompanied by a harp, cello or piano and Bachevsky's Bar with the author's cocktail card, designed by the brand-bartender of Ivan Zelik restaurant.Here guests can sample over 50 kinds of various «nalyvka» and «nastoyanka», made according to the Baczewski family recipes. Homemade liqueurs («nalyvka») and digestifs («nastoyanka») are very popular in Western Ukraine. They are believed to be stomach-settling miracles after a heavy meal because of the soothing properties of their herbal mixtures. They are a touch sweet, intensely flavored, and often served chilled and sipped slowly. "
@@ -80,7 +80,7 @@ export const recipes = [{
     title: 'Park Art of Rest',
     photo_url: 'https://mayertrade.com.ua/img/cms/BLOGS/312-savytskyy_Art%20of%20Rest/savytskyy_Art%20of%20Rest_3.jpg',
     time: '9:00',
-    date: "28.03.202",
+    date: "28.03.2020",
   },
   {
     recipeId: 122,
